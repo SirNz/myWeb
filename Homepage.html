@@ -15,11 +15,10 @@
 </head>
 
 <body>
-
-    <div class="container">
+    <div>
         <nav id="Nerv-Nav" class="navbar navbar-expand-md bg-dark navbar-dark">
-            <a class="navbar-brand" href="https://www.baidu.com" target="_blank"><img src="./image/logo.jpg"
-                    style="width: 110px;" alt="logo" ;></a>
+            <a class="navbar-brand" href="https://www.baidu.com" target="_blank"><img src="./image/logo.jpg" style="width: 110px;"
+                    alt="logo" ;></a>
             <!-- 按钮边框 -->
             <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <!-- 方框里面三条线 -->
@@ -57,8 +56,43 @@
                 </ul>
             </div>
         </nav>
+    </div>
+    <div class="container">
 
 
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- 指示符 -->
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+
+            <!-- 轮播图片 -->
+            <div class="carousel-inner" style="height:500px; margin-bottom: 10px;">
+                <div class="carousel-item active">
+                    <img src="./image/img1.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/img2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="./image/img3.jpg">
+                </div>
+            </div>
+
+            <!-- 左右切换按钮 -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+
+        </div>
+
+        <div>
         <h1>新世紀エヴァンゲリオン</h1>
         <p>Welcome to Nerv（聯合國人類補完委員會直屬特務機關）! Use <kbd>Alt+F4</kbd> to close the window...</p>
         <blockquote class="blockquote">
@@ -67,10 +101,12 @@
                 and close to 5 million globally.</p>
             <footer class="blockquote-footer">From WWF's website</footer>
         </blockquote>
+        </div>
 
         <div id="ArticleTitle">
             <a href="#">
-                <h3>第三新東京市大危機！第十使徒來襲！</h3>
+                <h3 style="display:inline;">第三新東京市大危機！第十使徒來襲！</h3>     <!--不换行-->
+                <span class="badge badge-success" style="position: relative; bottom: 5px;">new</span>
             </a>
             <p>在印度洋上空的同温层突然出现的SAHAQUIEL，是体积最庞大的使徒，躯体成对称的几何形，而且它本身即是一颗威力巨大的炸弹。可以将部分身体从大气层中降下，加速以绝对领域攻击。整体瞄准第三新东京市后开始加速下坠，但被EVA三机合力形成的A·T·FIELD抵挡，并在接二连三地刺击下摧毁。（剧场版：破中皮肤颜色从橙色改为黑色，并对能力进行加强。外形也更加令人感冒。）</p>
             <img src="image/bg1.jpg" height="200" width="320" />
@@ -92,7 +128,7 @@
             <img src="image/bg1.jpg" height="200" width="320" />
         </div>
 
-        <a href="https://www.baidu.com" target="_blank">百度一下</a>
+        <a href="https://www.baidu.com" target="_blank"><button type="button" class="btn btn-primary" style="margin-top: 20px;margin-bottom: 20px;">百度一下</button></a>
     </div>
 
 
