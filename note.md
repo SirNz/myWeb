@@ -40,7 +40,7 @@
 ---
 
 ### VSCode中预览.md文件
-使用指令 ctrl+Shift+V
+    使用指令 ctrl+Shift+V
 
 ---
 
@@ -72,3 +72,8 @@
     </div>
 </li>
 ```
+
+---
+
+### 属性 display:flex/flexbox;
+* Flex是Flexible Box的缩写，翻译成中文就是“弹性盒子”，用来为盒装模型提供最大的灵活性。任何一个容器都可以指定为Flex布局。
