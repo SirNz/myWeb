@@ -1,4 +1,4 @@
-### 2019-1-15
+### 2019-1
 ---
 ### HTML `<span>`标签
 * `<span>` 用于对文档中的行内元素进行组合。
@@ -76,4 +76,45 @@
 ---
 
 ### 属性 display:flex/flexbox;
-* Flex是Flexible Box的缩写，翻译成中文就是“弹性盒子”，用来为盒装模型提供最大的灵活性。任何一个容器都可以指定为Flex布局。
+* flex是Flexible Box的缩写，翻译成中文就是“弹性盒子”，用来为盒装模型提供最大的灵活性。任何一个容器都可以指定为Flex布局。
+
+* flexbox估计与flex是同一种意思的不同写法（? 未证实）
+
+* flexbox通常能让我们更好的操作他的子元素布局，例如：
+    * 如果元素容器没有足够的空间，我们无需计算每个元素的宽度，就可以设置他们在同一行；
+    * 可以快速让他们布局在一列；
+    * 可以方便让他们对齐容器的左、右、中间等；
+    * 无需修改结构就可以改变他们的显示顺序；
+    * 如果元素容器设置百分比和视窗大小改变，不用提心未指定元素的确切宽度而破坏布局，因为容器中的每个子元素都可以自动分配容器的宽度或高度的比例。
+
+> 参考资料：[Flexbox——快速布局神器_Flexbox, CSS3, Layout 教程_w3cplus](https://www.w3cplus.com/css3/flexbox-basics.html)
+---
+
+### 盒子模型margin/paddding/border属性详解
+* margin：盒子模型边框到外部另一个盒子边框的距离（可理解为外边距）；
+
+* padding：盒子模型边框到内容的距离（可简单理解为内边距），设置时大小向内扩展；
+
+* border：盒子模型边框的大小，设置时大小向外扩展。如原div的大小为100px\*100px，设置border大小为20px时，整个div的大小就变成了120px*120px了。
+
+    ![参考图片](./image/box_1.jpg)
+
+---
+
+### 盒子模型的flex-basis/flex-shrink/flex-grow属性详解
+flex items的应用准则：content –> width –> flex-basis (limted by max|min-width)
+也就是说：
+* 如果没有设置flex-basis属性，那么flex-basis的默认值为auto，则它的大小就等于项目的width属性的大小；
+
+* 如果没有设置width属性，那么flex-basis的大小就是项目内容(content)的大小；
+
+* 如果同时设置了width和flex-basis的值，在实际应用时flex-basis还是会覆盖掉width；
+
+* 可以使用min-width和max-width限制flex-basis的值；
+
+* flex-basis是item被放进一个flex容器**之前**的大小，它无法保证item在flex容器中的大小！比如当一定数量的item放进空间不足flex容器中时，items就会按照压缩率(flex-shrink)压缩其大小来填充容器，默认情况下每个item的压缩率都是一样的；
+
+* 当一定数量的item放进空间过剩的容器中时，我们可以使用flex-grow属性控制items的增长来填充可用的空间。flex-grow的默认值为0，意味着item不会增长。如果将每个item设置flex-grow：1，那么所有的item都会等比例增长以填充剩余的空间。
+
+---
+

@@ -12,3 +12,16 @@ body {
 .bg-black{
     background-color: #000000;
 }
+
+#nav-logo{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-nav .active{
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #ffffff;
+}
