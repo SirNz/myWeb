@@ -10,7 +10,7 @@ body {
 }
 
 .bg-black{
-    background-color: #000000;
+    background-color: #24292e;
 }
 
 #nav-logo{
@@ -25,3 +25,16 @@ body {
 .navbar-dark .navbar-nav .nav-link{
     color: #ffffff;
 }
+
+#carouselbox{
+    height: 400px;
+    margin-bottom: 1rem;
+    background-color: #EEE5DE;
+    box-shadow: 0 -2px 2px 0;
+}
+
+#carouselExampleIndicators{
+    margin: 0 auto;
+    width: 1200px;
+}
+
