@@ -97,7 +97,7 @@
 
 * border：盒子模型边框的大小，设置时大小向外扩展。如原div的大小为100px\*100px，设置border大小为20px时，整个div的大小就变成了120px*120px了。
 
-    ![参考图片](./image/box_1.jpg)
+    ![参考图片](./image/note/box_1.jpg)
 
 ---
 
@@ -115,6 +115,11 @@ flex items的应用准则：content –> width –> flex-basis (limted by max|mi
 * flex-basis是item被放进一个flex容器**之前**的大小，它无法保证item在flex容器中的大小！比如当一定数量的item放进空间不足flex容器中时，items就会按照压缩率(flex-shrink)压缩其大小来填充容器，默认情况下每个item的压缩率都是一样的；
 
 * 当一定数量的item放进空间过剩的容器中时，我们可以使用flex-grow属性控制items的增长来填充可用的空间。flex-grow的默认值为0，意味着item不会增长。如果将每个item设置flex-grow：1，那么所有的item都会等比例增长以填充剩余的空间。
+
+---
+
+### z-index属性详解
+    div盒子的堆叠顺序（简而言之，就是层级关系的意思）
 
 ---
 

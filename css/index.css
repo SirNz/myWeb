@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+.navbar-custom {
+    padding: 0;
+    position: sticky;
+    top:0;
+    background-color: #FCFCFC;
+    border-bottom: 1px solid #DDD;
+    width: 100%;
+    z-index: 200;
+}
+
+.navbg{
+    background-image: url(../image/Navbg.png);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+}
+
+.nav-person{
+    justify-content: flex-end;
+}
+
+.profile-picture-padding{
+    padding: .2rem .2rem;
+}
+
+.profile-picture{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

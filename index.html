@@ -23,149 +23,151 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="./css/homepage.css" type="text/css">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
 
     <!-- Websize logo -->
     <link rel="Bookmark" href="./image/key.ico" />
     <link rel="shortcut icon" href="./image/key.ico" type="image/x-icon" />
     <link rel="icon" href="./image/key.ico" type="image/x-icon" />
 
-    <title>首页 | 宁追的个人博客</title>
+    <title>首页 | Key Personal Blog</title>
 </head>
 
 <body>
     <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top">
-        <a class="navbar-brand" id="nav-logo" href="https://www.github.com" target="_blank">
-            <img src="./image/github.png" height="30px" alt="Type-Moon" class="d-inline-block align-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar navbar-custom">
+        <div class="container">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">作品</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">留言板</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" target="_blank">商务合作</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="_blank">关于</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        Works
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Music</a>
-                        <a class="dropdown-item" href="#">MAD/AMV</a>
-                        <a class="dropdown-item" href="#">Game</a>
-                        <a class="dropdown-item" href="#">Note</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Other</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./about.html" target="_blank">About</a>
-                </li>
-            </ul>
-
-            <span class="navbar-text" style="margin-right:1rem;">
-                少女☆歌剧 Revue Starlight
-            </span>
-
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="少女☆歌剧" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-
-    <!-- 轮播 -->
-    <div id="carouselbox">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-interval="5000">
-                    <img src="image/LB1.jpg" class="d-block w-100" alt="..."">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>abc</h5>
-                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                    <img src="image/LB2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>abc</h5>
-                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-interval="5000">
-                    <img src="image/LB3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>abc</h5>
-                        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    </div>
+            <div class="collapse navbar-collapse nav-person">
+                <div class="navbar-nav">
+                    <ul class="navbar-nav bd-navbar-nav flex-row">
+                        <!-- 个人头像 -->
+                        <li class="nav-item">
+                            <a class="nav-link profile-picture-padding" href="./register.html" target="_blank">
+                                <img src="./image/icon.ico" class="profile-picture">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
         </div>
-        </div>
+    </div>
+    <div>
+        <a href="#">
+            <div class="navbg">
 
-    <!-- 正文 -->
+            </div>
+        </a>
+
+    </div>
+
+
+    <div>
+
+
+    </div>
+
+
     <div class="container">
         <div>
-            <h1>新世紀エヴァンゲリオン</h1>
-            <p>Welcome to Nerv（聯合國人類補完委員會直屬特務機關）! Use <kbd>Alt+F4</kbd> to close the window...</p>
-            <blockquote class="blockquote">
-                <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation
-                    organization, WWF works in 100 countries and is supported by 1.2 million members in the United
-                    States
-                    and close to 5 million globally.</p>
-                <footer class="blockquote-footer">From WWF's website</footer>
-            </blockquote>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
         </div>
-
-        <div id="ArticleTitle">
-            <a href="#">
-                <h5 style="display:inline;">第三新東京市大危機！第十使徒來襲！</h5>
-                <!--不换行-->
-                <span class="badge badge-success" style="position: relative; bottom: 5px;">new</span>
-            </a>
-            <p>在印度洋上空的同温层突然出现的SAHAQUIEL，是体积最庞大的使徒，躯体成对称的几何形，而且它本身即是一颗威力巨大的炸弹。可以将部分身体从大气层中降下，加速以绝对领域攻击。整体瞄准第三新东京市后开始加速下坠，但被EVA三机合力形成的A·T·FIELD抵挡，并在接二连三地刺击下摧毁。（剧场版：破中皮肤颜色从橙色改为黑色，并对能力进行加强。外形也更加令人感冒。）</p>
-            <img src="image/bg1.jpg" height="200" width="320" />
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
         </div>
-
-        <div id="ArticleTitle">
-            <a href="#">
-                <h5>空之境界番外篇《未來福音》動畫化決定！</h5>
-            </a>
-            <p>在印度洋上空的同温层突然出现的SAHAQUIEL，是体积最庞大的使徒，躯体成对称的几何形，而且它本身即是一颗威力巨大的炸弹。可以将部分身体从大气层中降下，加速以绝对领域攻击。整体瞄准第三新东京市后开始加速下坠，但被EVA三机合力形成的A·T·FIELD抵挡，并在接二连三地刺击下摧毁。（剧场版：破中皮肤颜色从橙色改为黑色，并对能力进行加强。外形也更加令人感冒。）</p>
-            <img src="image/bg1.jpg" height="200" width="320" />
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
         </div>
-
-        <div id="ArticleTitle">
-            <a href="#">
-                <h5>両儀式と黒桐幹也の恋い物語</h5>
-            </a>
-            <p>在印度洋上空的同温层突然出现的SAHsAQUIEL，是体积最庞大的使徒，躯体成对称的几何形，而且它本身即是一颗威力巨大的炸弹。可以将部分身体从大气层中降下，加速以绝对领域攻击。整体瞄准第三新东京市后开始加速下坠，但被EVA三机合力形成的A·T·FIELD抵挡，并在接二连三地刺击下摧毁。（剧场版：破中皮肤颜色从橙色改为黑色，并对能力进行加强。外形也更加令人感冒。）</p>
-            <img src="image/bg1.jpg" height="200" width="320" />
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
         </div>
-
-        <a href="https://www.baidu.com" target="_blank"><button type="button" class="btn btn-primary" style="margin-top: 20px;margin-bottom: 20px;">百度一下</button></a>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
+        <div>
+            <h1>ABC中国赛高</h1>
+            <p>我爱中国共产党</p>
+        </div>
     </div>
+
+
+
 
 
     <!-- Optional JavaScript -->

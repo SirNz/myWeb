@@ -1,0 +1,21 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.app{
+    width: 100%;
+    /* height: 800px; */
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-box{
+    border: 1px double #666666;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+    width: 45%;
+    min-width: 400px;
+}
