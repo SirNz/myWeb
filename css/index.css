@@ -4,18 +4,25 @@ body {
 
 .navbar-custom {
     padding: 0;
-    position: sticky;
+    /* position: sticky; */    /*设置顶端导航栏浮动*/
     top:0;
-    background-color: #FCFCFC;
+    background-color: rgba(255, 255, 255, 0.4);
     border-bottom: 1px solid #DDD;
     width: 100%;
+    height: 42px;
     z-index: 200;
 }
+
+.navbar-custom .navbar-nav .nav-item .nav-link{
+    font-size: 12px;
+}
+
 
 .navbg{
     background-image: url(../image/Navbg.png);
     background-repeat: no-repeat;
-    /* background-size: 100%; */
+    background-position: center top;
+    background-color: #eee;
     height: 200px;
     width: 100%;
     position: absolute;
@@ -32,7 +39,7 @@ body {
 }
 
 .profile-picture{
-    height: 30px;
-    width: 30px;
+    height: 32px;
+    width: 32px;
     border-radius: 50%;
 }
