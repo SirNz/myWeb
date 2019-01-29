@@ -43,3 +43,11 @@ body {
     width: 32px;
     border-radius: 50%;
 }
+
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+#nav-left ul > li + li {
+    margin-left: 10px;
+}
