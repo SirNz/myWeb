@@ -15,7 +15,7 @@ body {
     background-color: rgba(256, 256, 256, 0.5);
     border: 1px double #797979;
     border-radius: 10px;
-    padding: 2rem 4rem;
-    width: 80%;
-    min-width: 400px;
+    padding: 2rem 2rem;
+    width: 65%;
+    min-width: 500px;
 }
