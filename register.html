@@ -17,29 +17,41 @@
     <link rel="shortcut icon" href="./image/key.ico" type="image/x-icon" />
     <link rel="icon" href="./image/key.ico" type="image/x-icon" />
 
-    <title>注册 | Key Personal Blog</title>
+    <title>注册 - Key Personal Blog</title>
 </head>
 
 <body>
     <div class="container app">
+        <div class="logo-box">
+            <img src="./image/key.ico">
+        </div>
         <div class="register-box">
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">昵称</label>
+                    <label for="exampleInputEmail1">Username</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                        placeholder="Nick Name">
+                        placeholder="Enter username">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">登录密码</label>
+                    <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">How did you know me?</label>
+                    <select class="custom-select" id="inputGroupSelect">    
+                        <option selected>All</option>
+                        <option value="1">AMV/MAD</option>
+                        <option value="2">Game</option>
+                        <option value="3">Article</option>
+                    </select>
                 </div>
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                 </div>
-                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="submit()">注册</button>
-                <button type="button" class="btn btn-secondary btn-lg btn-block">登录</button>
+                <button type="button" class="btn btn-primary btn-lg btn-block" onclick="submit()">Sign up</button>
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Login</button>
             </form>
         </div>
     </div>
