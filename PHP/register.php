@@ -1,11 +1,11 @@
 <?php
 // define variables and set to empty values
-$username = $password = $email = $gender = $comment = $website = "";
-$userErr = $pwdErr = "";
+$username = $password = "";
+$nameErr = $pwdErr = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (empty($_POST["username"])){
-        $userErr = "Username is required!";
+        $nameErr = "Username is required!";
     }
     else {
         $username = test_input($_POST["username"]);
@@ -17,26 +17,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     else {
         $password = test_input($_POST["password"]);
     }
-
-//    $email = test_input($_POST["email"]);
-//    $website = test_input($_POST["website"]);
-//    $comment = test_input($_POST["comment"]);
-//    $gender = test_input($_POST["gender"]);
 }
 
 function test_input($data) {
-   $data = trim($data);
-   $data = stripslashes($data);
-   $data = htmlspecialchars($data);
+   $data = trim($data);  //去掉字符序列左边和右边的空格（中间的不管）
+   $data = stripslashes($data);  //删除反斜杠
+   $data = htmlspecialchars($data);  //把一些预定义的字符转换成HTML实体
    return $data;
 }
 
 
-$con = mysqli_connect("localhost:3306","root","root");
+/*
+*连接mySQL数据库
+*/
+$con = mysqli_connect("localhost","root","root");
 if (!$con)
   {
   die('Could not connect: ' . mysql_error());
   }
+
 
 mysqli_select_db($con, "key_website");
 
@@ -50,9 +49,8 @@ if (!mysqli_query($sql,$con))
   }
 echo "1 record added";
 
-mysqli_close($con)
-
-
+// $con->close(); 面向对象
+mysqli_close($con) // 面向过程
 
 ?>
 
