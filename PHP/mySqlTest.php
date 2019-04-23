@@ -10,6 +10,7 @@
 
     <?php
         $firstname = $lastname = $email = "";
+        //
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $firstname = $_POST["firstname"];   
             $lastname = $_POST["lastname"];
@@ -108,33 +109,33 @@ echo $email;
 
 
     //PDO 创建表
-    try{
-        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-        // 设置 PDO 错误模式，用于抛出异常
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // try{
+    //     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    //     // 设置 PDO 错误模式，用于抛出异常
+    //     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        // 使用 sql 创建表
-        $sql = "CREATE TABLE myGuests (
-            id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-            firstname VARCHAR(30) NOT NULL,
-            lastname VARCHAR(30) NOT NULL,
-            email VARCHAR(50),
-            reg_date TIMESTAMP
-            )";
+    //     // 使用 sql 创建表
+    //     $sql = "CREATE TABLE myGuests (
+    //         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    //         firstname VARCHAR(30) NOT NULL,
+    //         lastname VARCHAR(30) NOT NULL,
+    //         email VARCHAR(50),
+    //         reg_date TIMESTAMP
+    //         )";
 
-        // 使用 exec() ,返回受影响的行数（没有结果返回）
-        $count = $conn->exec($sql);
-        echo "Create database myGuests succed<br>";
-        echo "----------------------------------<br>";
-        echo "$count rows were changed.<br>";
-        echo "----------------------------------<br>";
-    }
-    catch(PDOException $e){
-        echo $sql . "<br>" . $e->getMessage();
-        echo "----------------------------------<br>";
-    }
+    //     // 使用 exec() ,返回受影响的行数（没有结果返回）
+    //     $count = $conn->exec($sql);
+    //     echo "Create database myGuests succed<br>";
+    //     echo "----------------------------------<br>";
+    //     echo "$count rows were changed.<br>";
+    //     echo "----------------------------------<br>";
+    // }
+    // catch(PDOException $e){
+    //     echo $sql . "<br>" . $e->getMessage();
+    //     echo "----------------------------------<br>";
+    // }
 
-    $conn = null;
+    // $conn = null;
 
     try {
         $conn1 = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
