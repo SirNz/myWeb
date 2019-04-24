@@ -1,59 +1,43 @@
 <?php
-// define variables and set to empty values
-// $username = $password = "";
-// $nameErr = $pwdErr = "";
+    // 数据库信息
+    $servername = "localhost";
+    $sqlname = "root";
+    $sqlpwd = "root";
+    $dbname = "key_website";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["username"])){
-        $nameErr = "Username is required!";
-    }
-    else {
-        $username = test_input($_POST["username"]);
+    // 接收表单数据
+    $username = $password = "";
+    //
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $username = $_POST["username"];   
+        $password = $_POST["password"];
     }
 
-    if (empty($_POST["password"])){
-        $pwdErr = "Password is required!";
-    }
-    else {
-        $password = test_input($_POST["password"]);
-    }
-}
+    // 连接数据库
+    try {
+        $conn1 = new PDO("mysql:host=$servername;dbname=$dbname", $sqlname, $sqlpwd);
+        $conn1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $sql = "INSERT INTO account (username, password)
+        VALUES ('$username','$password')";
 
-function test_input($data) {
-   $data = trim($data);  //去掉字符序列左边和右边的空格（中间的不管）
-   $data = stripslashes($data);  //删除反斜杠
-   $data = htmlspecialchars($data);  //把一些预定义的字符转换成HTML实体
-   return $data;
-}
+        $conn1->exec($sql);
+        print <<<EOT
+        <div>
+        Welcome to my personal website!<br>
+        Your username is <font color="red"><b>$username</b></font><br>
+        Your password is <font color="red"><b>$password</b></font>
+        </div>
+EOT;
+
+    } catch (PDOException $e) {
+        echo $sql . "<br>" . $e->getMessage();
+    }
+
+
+
 
 
 /*
-*连接mySQL数据库
-*/
-$con = mysqli_connect("localhost","root","root");
-if (!$con)
-  {
-  die('Could not connect: ' . mysql_error());
-  }
-
-
-mysqli_select_db($con, "key_website");
-
-$sql="INSERT INTO account (username, password)
-VALUES
-('$_POST[username]','$_POST[password]')";
-
-if (!mysqli_query($sql,$con))
-  {
-  die('Error: ' . mysqli_error());
-  }
-echo "1 record added";
-
-// $con->close(); 面向对象
-mysqli_close($con) // 面向过程
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -73,3 +57,7 @@ mysqli_close($con) // 面向过程
 </body>
 
 </html>
+*/
+
+
+?>

@@ -42,14 +42,14 @@
     </form>
 
     <?php
-echo "<h2>您的输入：</h2>";
-echo $firstname;
-echo "<br>";
-echo $lastname;
-echo "<br>";
-echo $email;
+    echo "<h2>您的输入：</h2>";
+    echo $firstname;
+    echo "<br>";
+    echo $lastname;
+    echo "<br>";
+    echo $email;
 
-?>
+    ?>
 
 
     <!--
