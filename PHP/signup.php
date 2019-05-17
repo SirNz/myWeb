@@ -17,7 +17,10 @@
     try {
         $conn1 = new PDO("mysql:host=$servername;dbname=$dbname", $sqlname, $sqlpwd);
         $conn1->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        
+        // 数据库插入语句
         $sql = "INSERT INTO account (username, password)
+
         VALUES ('$username','$password')";
 
         $conn1->exec($sql);

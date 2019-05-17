@@ -4,6 +4,11 @@
     $username = "root";
     $password = "root";
     
-    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
-
+    try {
+        $conn = new PDO("mysql:host=$servername;", $username, $password);
+        echo "连接成功";
+    }
+    catch(PDOException $e){
+        echo $e->getMessage();
+    }
 ?>
