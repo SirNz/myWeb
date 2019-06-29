@@ -19,6 +19,7 @@ body {
 
 
 .navbg{
+    /* 主页海报 */
     background-image: url(../image/Navbg.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -31,23 +32,32 @@ body {
 }
 
 .nav-person{
+    /* Flex布局：右对齐 */
     justify-content: flex-end;
 }
 
 .profile-picture-padding{
+    /* 头像位置调整 */
     padding: .2rem .2rem;
 }
 
 .profile-picture{
+    /* 右上角个人头像大小设置 */
     height: 32px;
     width: 32px;
     border-radius: 50%;
 }
 
 .navbar-light .navbar-nav .nav-link{
+    /* 导航栏颜色设置 */
     color: black;
 }
 
 #nav-left ul > li + li {
+    /* 设置最顶端导航栏的文字间距 */
     margin-left: 10px;
+}
+
+.div-content{
+    margin-top: 200px;
 }
