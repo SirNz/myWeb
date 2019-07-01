@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    /* background-color: #eee; */
 }
 
 .navbar-custom {
@@ -18,7 +19,7 @@ body {
 }
 
 
-.navbg{
+.nav-bg{
     /* 主页海报 */
     background-image: url(../image/Navbg.png);
     background-repeat: no-repeat;
@@ -58,6 +59,43 @@ body {
     margin-left: 10px;
 }
 
-.div-content{
-    margin-top: 200px;
+.carousel{
+    /* 轮播图盒子设置 */
+    height: 200px;
+}
+
+.div-board{
+    background-color: grey;
+    padding: 0 1rem 0 1rem; /* 上 右 下 左 */
+}
+
+.content{
+    padding: 0;
+}
+
+.div-con{
+    display: flex;
+}
+
+.content-left{
+    flex-flow: column wrap;
+    width: 70%;
+    background-color: aqua;
+}
+
+.content-right{
+    flex-flow: column wrap-reverse;
+    width: 30%;
+    background-color: coral;
+}
+
+.div-board .p-nobottom {
+    /* 公告栏下p标签底外边距置0 */
+    margin-bottom: 0;
+}
+
+.article-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
 }
