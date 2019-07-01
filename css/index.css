@@ -64,7 +64,7 @@ body {
     height: 200px;
 }
 
-.div-board{
+.content-board{
     background-color: grey;
     padding: 0 1rem 0 1rem; /* 上 右 下 左 */
 }
@@ -89,7 +89,7 @@ body {
     background-color: coral;
 }
 
-.div-board .p-nobottom {
+.content-board .p-nobottom {
     /* 公告栏下p标签底外边距置0 */
     margin-bottom: 0;
 }
