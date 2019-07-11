@@ -18,9 +18,8 @@ body {
     font-size: 12px;
 }
 
-
+/* 主页海报 */
 .nav-bg{
-    /* 主页海报 */
     background-image: url(../image/Navbg.png);
     background-repeat: no-repeat;
     background-position: center top;
@@ -37,33 +36,34 @@ body {
     justify-content: flex-end;
 }
 
+/* 头像位置 */
 .profile-pic-location{
-    /* 头像位置调整 */
     padding: .2rem .2rem;
 }
 
+/* 右上角个人头像 */
 .profile-pic{
-    /* 右上角个人头像大小设置 */
     height: 32px;
     width: 32px;
     border-radius: 50%;
 }
 
+/* 导航栏颜色设置 */
 .navbar-light .navbar-nav .nav-link{
-    /* 导航栏颜色设置 */
     color: black;
 }
 
+/* 左上导航栏文字间距 */
 #nav-left ul > li + li {
-    /* 设置最顶端导航栏的文字间距 */
     margin-left: 10px;
 }
 
+/* 轮播图盒子设置 */
 .carousel{
-    /* 轮播图盒子设置 */
     height: 200px;
 }
 
+/* 公告栏 */
 .app-board{
     background-color: grey;
     padding: 0 1rem 0 1rem; /* 上 右 下 左 */
@@ -107,10 +107,21 @@ body {
 }
 
 .footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 300px;
     background-color: crimson;
 }
+
+.footer p{
+    /* display: flexbox; */
+    font-size: 50px;
+    color: white;
+}
+
 
 
 /* 小屏幕的显示：最大像素不超过 992px 时 */
