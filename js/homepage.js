@@ -1,0 +1,4 @@
+function getArticleCount(){
+    var e;
+    
+}
